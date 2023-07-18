@@ -1,0 +1,210 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+ }
+
+ body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   background-color: #f0f0f0;
+   margin: 0;
+   background: linear-gradient(blue,#fff);
+ }
+ 
+
+
+ header{
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+    margin-bottom: 850px;
+    
+ }
+
+ .logo{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.8em;
+    margin-left: 550px;
+    margin-top: 80px;
+    color: #fff; /* Set the text color */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), /* Initial shadow */
+                 0 0 20px rgba(255, 255, 255, 0.5),
+                 0 0 30px rgba(255, 255, 255, 0.3),
+                 0 0 40px rgba(255, 255, 255, 0.2),
+                 0 0 50px rgba(255, 255, 255, 0.1); /* Larger and more transparent shadow */
+    animation: glowing 2s infinite;
+ }
+
+ @keyframes glowing {
+  0% {
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), /* Initial shadow */
+                   0 0 20px rgba(255, 255, 255, 0.5),
+                   0 0 30px rgba(255, 255, 255, 0.3),
+                   0 0 40px rgba(255, 255, 255, 0.2),
+                   0 0 50px rgba(255, 255, 255, 0.1); /* Larger and more transparent shadow */
+  }
+  50% {
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.9), /* Larger and more opaque shadow */
+                   0 0 30px rgba(255, 255, 255, 0.7),
+                   0 0 40px rgba(255, 255, 255, 0.5),
+                   0 0 50px rgba(255, 255, 255, 0.3),
+                   0 0 60px rgba(255, 255, 255, 0.2); /* Larger and more transparent shadow */
+  }
+  100% {
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), /* Back to the initial shadow */
+                   0 0 20px rgba(255, 255, 255, 0.5),
+                   0 0 30px rgba(255, 255, 255, 0.3),
+                   0 0 40px rgba(255, 255, 255, 0.2),
+                   0 0 50px rgba(255, 255, 255, 0.1); /* Larger and more transparent shadow */
+  }
+}
+ 
+ .navigation a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+ }
+
+ .navigation a:hover{
+    color: #601cfc;
+ }
+
+ section {
+    padding: 100px 200px;
+ }
+
+ img{
+   box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+   animation: imganimation 2s ease-in-out infinite;
+ }
+
+ @keyframes imganimation {
+   0% {
+     box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+   }
+   50% {
+     box-shadow: 0 0 40px rgba(255, 255, 255, 0.8);
+   }
+   100% {
+     box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+   }
+ }
+
+audio{
+   width: 250px;
+   margin-top: 70px;
+}
+
+h2{
+   margin-top: 30px;
+   margin-bottom: -30px;
+}
+img{
+   margin-top: 25px;
+}
+.glowing-card2 {
+   width: 300px;
+   height: 450px;
+   background: linear-gradient(blue, #fff);
+   border-radius: 10px;
+   box-shadow: 0 0 20px rgba(0, 26, 255, 0.8); /* Adjust the color and alpha (4th value) for the desired glow color */
+   padding: 20px;
+   text-align: center;
+   animation: glowAnimation 2s ease-in-out infinite;
+   margin-left: 40px;
+   transition: 0.7s ease;
+   
+ }
+
+ @keyframes glowAnimation2 {
+   0% {
+     box-shadow: 0 0 20px rgba(0, 26, 255, 0.8);
+   }
+   50% {
+     box-shadow: 0 0 40px rgba(0, 26, 255, 0.8);
+   }
+   100% {
+     box-shadow: 0 0 20px rgba(0, 26, 255, 0.8);
+   }
+ }
+
+ .glowing-card {
+   width: 300px;
+   height: 450px;
+   background: linear-gradient(blue, #fff);
+   border-radius: 10px;
+   box-shadow: 0 0 20px rgba(0, 26, 255, 0.8); /* Adjust the color and alpha (4th value) for the desired glow color */
+   padding: 20px;
+   text-align: center;
+   animation: glowAnimation 2s ease-in-out infinite;
+   margin-left: 40px;
+   transition: 0.7s ease;
+ }
+
+ @keyframes glowAnimation {
+   0% {
+     box-shadow: 0 0 20px rgba(0, 26, 255, 0.8);
+   }
+   50% {
+     box-shadow: 0 0 40px rgba(0, 26, 255, 0.8);
+   }
+   100% {
+     box-shadow: 0 0 20px rgba(0, 26, 255, 0.8);
+   }
+ }
+
+ .glowing-card :hover{
+   transform: scale(1.1);
+}
+
+
+
+.glowing-card2:hover{
+   transform: scale(1.1);
+}
+
+.glowing-card1 {
+   width: 300px;
+   height: 450px;
+   background: linear-gradient(blue, #fff);
+   border-radius: 10px;
+   box-shadow: 0 0 20px rgba(0, 26, 255, 0.8); /* Adjust the color and alpha (4th value) for the desired glow color */
+   padding: 20px;
+   text-align: center;
+   animation: glowAnimation1 2s ease-in-out infinite;
+   margin-left: 40px;
+   transition: 0.7s ease;
+   
+ }
+
+ @keyframes glowAnimation1 {
+   0% {
+     box-shadow: 0 0 20px rgba(0, 26, 255, 0.8);
+   }
+   50% {
+     box-shadow: 0 0 40px rgba(0, 26, 255, 0.8);
+   }
+   100% {
+     box-shadow: 0 0 20px rgba(0, 26, 255, 0.8);
+   }
+ }
+
+
+
+.glowing-card1:hover{
+   transform: scale(1.1);
+}
+
